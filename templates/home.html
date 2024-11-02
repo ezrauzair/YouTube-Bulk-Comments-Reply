@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulking YouTube Comments</title>
+    <link rel="stylesheet" href="{% static 'css.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Bulking YouTube Comments</h2>
+        
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li class="{{ message.tags }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        
+        <form action="{% url 'process_form' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="link" placeholder="Paste Video Link Here" class="input-field" id="linkInput" required>
+            <textarea name="text" placeholder="Write your reply message here..." class="input-field" rows="4" id="textInput" required></textarea>
+            <button type="submit" class="btn">Perform</button>
+        </form>
+    </div>
+</body>
+</html>
