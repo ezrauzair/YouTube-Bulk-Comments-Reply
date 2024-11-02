@@ -35,8 +35,8 @@ def process_form(request):
         # Authenticate and create a YouTube API client
         credentials = None
         # Load credentials from the JSON file
-        if os.path.exists("C:\\Users\\PMYLS\\Desktop\\Youtube Comments Bulking\\Bulking\\credentials\\client_secret_451643327428-aisesqlb3clv2m3voek0d46h9h17r0c1.apps.googleusercontent.com.json"):
-            flow = InstalledAppFlow.from_client_secrets_file("C:\\Users\\PMYLS\\Desktop\\Youtube Comments Bulking\\Bulking\\credentials\\client_secret_451643327428-aisesqlb3clv2m3voek0d46h9h17r0c1.apps.googleusercontent.com.json", SCOPES)
+        if os.path.exists("Paste Your Own Path to YouTube Data API Credentials..."):
+            flow = InstalledAppFlow.from_client_secrets_file("Paste Your Own Path to YouTube Data API Credentials...", SCOPES)
             credentials = flow.run_local_server(port=0)
         else:
             messages.error(request, 'Credentials file not found.')
