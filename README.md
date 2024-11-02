@@ -27,7 +27,8 @@ This project is an automation tool designed to reply to comments on YouTube vide
 
 🖼️ Screenshots
 🔍 YouTube Comment Bulk Reply Interface
-![image](https://github.com/user-attachments/assets/1614ee42-b6e8-4524-8308-78487d88ffe9)
+![Screenshot 2024-11-02 195745](https://github.com/user-attachments/assets/3d3fb9cb-9336-4a5e-88a9-eaa784fd10bd)
+
 
 🚀 Bulk Reply Execution
 ![Screenshot 2024-11-02 201545](https://github.com/user-attachments/assets/bf109472-a9e3-4799-83b2-d1d1625a6668)
